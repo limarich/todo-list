@@ -18,7 +18,7 @@ import {TiEdit} from 'react-icons/ti';
     }
 
     if(edit.id) {
-        return <TodoForm edit={edit} onSubmit={submitUpdate} />
+        return <TodoForm edit={edit} onSubmit={submitUpdate} />;
     }
 
    return todos.map((todo, index) => 
@@ -35,9 +35,9 @@ import {TiEdit} from 'react-icons/ti';
             onClick={() => removeTodo(todo.id)}
             className='delete-icon'
         />
-        <TiEdit
-            onClick={() => setEdit({ id: todo.id, value: todo.text})}
-            className='edit-icon'
+         <TiEdit
+          onClick={() => setEdit({ id: todo.id, value: todo.text })}
+          className='edit-icon'
         />
         </div>
      </div>
